@@ -1,35 +1,19 @@
-import React, { Component } from 'react';
-import { HashRouter, Route, Link } from 'react-router-dom';
-import { Layout } from 'antd';
-import { Footer } from './components';
-import { Header } from './components';
 import styles from './Styles/Base.scss'
+import { Catalog } from './components/Catalog';
+import { Header } from './components/Footer';
+import { Footer } from './components/Header';
+import { Notfound } from './components/NotFound'
 
+function App() {
+  return (
+    <body>
+      <Header />
+      <div classname='container'>
 
-  function App() {
-    constructor(props){
-      super(props)
-  
-      this.state = {
-  
-      }
-
-      return (
-      <HashRouter>
-      <Layout className="layout" style={{ height: "100%" }}>
-
-        {/*Header part  */}
-        <Header />
-
-        {/* Main part */}
-        <Content style={{ backgroundColor: '#fff' }}>
-        <Route path="/movie/:type/:page" component={MovieList}></Route>
-        </Content>
-        {/* Footer part */}
-        <Footer />
-        
-      </Layout>
-    </HashRouter>
-    )}}
+      </div>
+      <Footer />
+    </body>
+  )
+}
 
 export default App;
