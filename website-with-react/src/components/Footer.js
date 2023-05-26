@@ -1,9 +1,11 @@
-import styles from './Styles/Base.scss'
+import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <Footer style={{ textAlign: 'center' }}>©2023 Xidi Wang Created </Footer>
-  )
+    <footer className="footer">
+      <p>&copy; 2023 Xidi Wang Created.</p>
+    </footer>
+  );
 }
 
 export default Footer;

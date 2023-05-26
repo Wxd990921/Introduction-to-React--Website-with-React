@@ -1,12 +1,15 @@
-import styles from './Styles/Base.scss'
+import { Link } from "react-router-dom";
+import "../styles/NotFound.css";
 
 function NotFound() {
-      return (<div className="notFundPage">
-      <div className="box_404">
-        <a href="#/index" className="btnBackH">Not Found Please Return</a>
-      </div>
+  return (
+    <div className="notFoundPage">
+      <h1 className="heading">404</h1>
+      <Link to="/">
+        <button className="btn">Return Home</button>
+      </Link>
     </div>
-      )
-    }
+  );
+}
 
-    export default NotFound;
+export default NotFound;
